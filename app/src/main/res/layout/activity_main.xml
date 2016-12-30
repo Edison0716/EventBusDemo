@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mac.eventbusdemo.MainActivity">
+
+    <Button
+        android:onClick="sendEventBus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送自定义EventBus内容!" />
+
+    <Button
+        android:onClick="sendCustomEventBus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送code对应的EventBus内容!" />
+    <Button
+        android:onClick="turnToMain2Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到Main2Activity,并发送一条信息！"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
